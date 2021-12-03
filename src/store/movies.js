@@ -27,8 +27,8 @@ const slice = createSlice({
 export default slice.reducer;
 
 const { moviesRequested, moviesReceived, moviesRequestFailed } = slice.actions;
-
-const url = "/3/movie/popular?api_key=200411096b426384ebc11827c9d89f50";
+const API_KEY = process.env.REACT_APP_API_KEY;
+const url = `/3/movie/popular?api_key=${API_KEY}`;
 
 export const getmovies = () => (dispatch) => {
     return dispatch(

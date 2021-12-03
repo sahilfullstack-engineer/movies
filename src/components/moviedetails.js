@@ -7,7 +7,7 @@ const MovieDetails = () => {
     return (
         <Box sx={{ flexGrow: 1 }} style={{marginTop: 70}}>
             <Grid container spacing={0}>
-            	<Grid item xs={12} key={0} style={{backgroundColor: "#7f7053", padding: 10}}>
+            	<Grid item xs={12} key={0} style={{backgroundColor: "#746A64", padding: 10}}>
             		<p style={{color: "#ffffff"}}>{state.original_title}</p>
             	</Grid>
             </Grid>
@@ -20,7 +20,7 @@ const MovieDetails = () => {
 	                	<h4 style={{color: "#000000", margin: 0, fontSize: 17}}>{state.release_date.split("-")[0]}</h4>
 	                	<p style={{color: "#000000", margin: 0, fontSize: 15}}>125 mins</p>
 	                	<p style={{color: "#000000", margin: 0, fontSize: 15, fontWeight: "bold", position: "absolute", bottom: 60}}>{state.vote_average}/10</p>
-	                	<Button variant="contained" style={{color: "#ffffff", margin: 0, position: "absolute", bottom: 5, backgroundColor: "#7f7053"}}>Add to Favorite</Button>
+	                	<Button variant="contained" style={{color: "#ffffff", margin: 0, position: "absolute", bottom: 5, backgroundColor: "#746A64"}}>Add to Favorite</Button>
 	                </Grid>
 	            </Grid>
 	            <Grid container spacing={2}>

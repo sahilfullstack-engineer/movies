@@ -8,6 +8,9 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   alignItems: 'flex-start',
   paddingTop: theme.spacing(1),
   paddingBottom: theme.spacing(2),
+  backgroundColor: 'black',
+  color:'#f0f0f0',
+  fontWeight: 'bold',
   // Override media queries injected by theme.mixins.toolbar
   '@media all': {
     minHeight: "100%",
@@ -21,8 +24,8 @@ const Header = (props) => {
                 {props.page==="detail" ? <IconButton size="large" aria-label="go back" edge="end" color="inherit" sx={{ mr: 1}} onClick={()=> navigate('/') }>
                     <ArrowBackIcon />
                 </IconButton> : null}
-                {props.page==="home" ? <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, alignSelf: 'center'}}>Popular movies</Typography> : null}
-                {props.page==="detail" ? <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, alignSelf: 'center'}}>Movie Details</Typography> : null}
+                {props.page==="home" ? <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, alignSelf: 'center'}}>Pop Movies</Typography> : null}
+                {props.page==="detail" ? <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1, alignSelf: 'center'}}>Movie details</Typography> : null}
                 <IconButton size="large" aria-label="display more actions" edge="end" color="inherit">
                     <MoreIcon />
                 </IconButton>
